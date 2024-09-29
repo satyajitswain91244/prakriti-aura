@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prakriti aura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Picsart_24-09-25_15-41-50-125.png" height="50px">
+                <h1>PRAKRITI AURA</h1>
+            </div>
+            <div class="search-box">
+                <form>
+                    <input type="text" name="search" id="srch" placeholder="Search" onfocus="showAllDiseases()" oninput="filterDiseases()">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <div id="suggestions-box"></div>
+                </form>
+            </div>
+    
+               
+            <ul class="nav-links">
+
+                <li><a href="about.html"><P>ABOUT</P></a></li>
+                <li><a href="service.html"><P>SERVICES</P></a></li>
+                <li><a href="contact.html"><P>CONTACT</P></a></li>
+            </ul>
+            <div id="login">
+                
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page content goes here -->
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>The body is your temple . keep it pure and clean for the soul to reside in .</p>
+    </div>
+
+    <!-- Bottom navigation buttons -->
+    <div class="bottom-buttons">
+        <a href="Login.html" class="button">LOG IN</a>
+        <a href="cards.html" class="button">ISSUES CARDS</a>
+    </div>
+    <!-- extra content goes here -->
+    <div class="descriptions">
+        <p>Welcome to PRAKRITI AURA – your guide to understanding the power of Ayurveda and its natural remedies. Our mission is to educate people about the ancient wisdom of Ayurveda, focusing on Ayurvedic trees and their incredible healing properties. We believe that nature holds the key to health and wellness, offering solutions for common ailments right from your home.
+
+            At [PRAKRITI AURA], you’ll discover how to treat everyday health issues using simple Ayurvedic remedies, empowering you to take care of your body naturally. With a deep dive into Ayurvedic trees and their medicinal uses, we aim to reconnect you with nature's pharmacy and minimize the need for immediate doctor visits.
+            
+            </p>
+    </div>
+    <script src="script.js"></script>
+    <!-- Social Media Links Section -->
+    <section class="social-media-section">
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/CodeCatalyst000?t=BHpoezA7ZiDRpMBlWwm2Mw&s=09"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/code_catalyst_iitp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/code-catalyst-4077a932b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <script src="path-to-your-javascript-file.js"></script>
+
+
+</body>
+</html>
+<style>
+    /* Global reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height:600px;
+    width: 100%;
+    object-fit: cover;
+    
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: cadetblue;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Social Media Section */
+.social-media-section {
+    text-align: center;
+    margin: 20px;
+    margin-left: 75px;
+}
+
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: black;
+}
+.logo{
+    display: flex;
+    
+}
+.logo h1{
+    margin: 10px;
+    margin-left: 20px;
+    color: #000000;
+    font-size: 30px;
+font-style: inherit;
+text-shadow: 1px 1px 2px black, -1px -1px 2px white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links a p{
+    text-decoration: none;
+    color: black;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+.search-box{
+    margin-left: 70px;
+}
+.search-box input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: green;
+    color: #fff;
+    
+}
+
+#suggestions-box {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+.nav-links P:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: 0.4s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 30px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+/* Page content */
+.content {
+    text-align: center;
+    margin: 50px ;
+    font-size: 18px;
+    margin-top: 180px;
+    
+}
+
+/* Bottom buttons styling */
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.button {
+    background-color: #764ba2;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #667eea;
+    transform: translateY(-5px);
+}
+.descriptions{
+    text-align: center;
+    color: white;
+padding: 50px;
+margin: 70px;
+
+
+}
+</style>
+<script>
+// Updated list of diseases with corrected names and corresponding URLs
+const diseases = [
+    { name: 'Digestive issues', url: 'bengalquince.html' },
+    { name: 'Asthma issues', url: 'yashtimadhu.html' },
+    { name: 'Cardiovascular issues', url: 'garlic.html' },
+    { name: 'Respiratory issues', url: 'tulsi.html' },
+    { name: 'Menstrual issues', url: 'wildasparagus.html' },
+    { name: 'Kidney stones', url: 'hogweed.html' },
+    { name: 'Skin issues', url: 'neem.html' },
+    { name: 'Mental fatigue', url: 'staffvine.html' },
+    { name: 'Memory loss', url: 'asiaticpennywort.html' },
+    { name: 'Dehydration/Indigestion', url: 'watermelon.html' },
+    { name: 'Allergy', url: 'corriander.html' },
+    { name: 'Hair loss', url: 'falsedaisy.html' },
+    { name: 'skin allergy', url: 'skinallergy.html' },
+    { name: 'stomach ulcer', url: 'licorice.html' },
+    { name: 'pain', url: 'turmeric.html' },
+    { name: 'anxiety issue', url: 'indiangineng.html' },
+    { name: 'immunity booster', url: 'amla.html' },
+
+    { name: 'Nutritional deficiency', url: 'drumstic.html' },
+
+    { name: 'Digestive infection', url: 'onion.html' },
+    { name: 'Anemia', url: 'pricklyamaranth.html' },
+    { name: 'Oral health', url: 'betelnut.html' },
+    { name: 'Fever', url: 'indianbirthwort.html' },
+    { name: 'Infertility', url: 'wildasparagus2.html' },
+    { name: 'Infection', url: 'indianbarberry.html' },
+    { name: 'Kidney issues', url: 'sensitivplant.html' },
+    { name: 'Edema', url: 'hogweed2.html' }
+];
+
+// Function to display all diseases
+function showAllDiseases() {
+    const suggestionsBox = document.getElementById('suggestions-box');
+    suggestionsBox.innerHTML = '';
+    diseases.forEach(disease => {
+        const div = document.createElement('div');
+        div.className = 'suggestion-item';
+        div.textContent = disease.name;
+        div.onclick = () => {
+            window.location.href = disease.url;
+        };
+        suggestionsBox.appendChild(div);
+    });
+    suggestionsBox.style.display = 'block';
+}
+
+// Function to filter diseases based on input
+function filterDiseases() {
+    const searchInput = document.getElementById('srch').value.toLowerCase();
+    const suggestionsBox = document.getElementById('suggestions-box');
+    suggestionsBox.innerHTML = '';
+    const filteredDiseases = diseases.filter(disease => disease.name.toLowerCase().includes(searchInput));
+    filteredDiseases.forEach(disease => {
+        const div = document.createElement('div');
+        div.className = 'suggestion-item';
+        div.textContent = disease.name;
+        div.onclick = () => {
+            window.location.href = disease.url;
+        };
+        suggestionsBox.appendChild(div);
+    });
+    suggestionsBox.style.display = filteredDiseases.length ? 'block' : 'none';
+}
+
+// Show suggestions box when the input is focused
+document.getElementById('srch').addEventListener('focus', showAllDiseases);
+
+// Hide suggestions box when clicking outside
+document.addEventListener('click', function(event) {
+    const searchBox = document.getElementById('srch');
+    const suggestionsBox = document.getElementById('suggestions-box');
+    if (!searchBox.contains(event.target) && !suggestionsBox.contains(event.target)) {
+        suggestionsBox.style.display = 'none';
+    }
+});
+
+// Stop click event propagation on the search box and suggestions box
+document.getElementById('suggestions-box').addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+
+</script>
